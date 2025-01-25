@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranger Data Systems - Mobile Data Capture Solutions</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/api/placeholder/1920/1080');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 150px 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .navbar {
+      background-color: transparent;
+      transition: 0.3s;
+      padding: 1rem 0;
+    }
+    .navbar.scrolled {
+      background-color: #fff;
+    }
+    .navbar.scrolled .nav-link {
+      color: #333 !important;
+    }
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    .product-card {
+      background: #f8f9fa;
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .product-card .icon {
+      height: 60px;
+      width: 60px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .section-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #4CAF50;
+      margin-bottom: 1rem;
+    }
+    .btn-contact {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-contact:hover {
+      background-color: #45a049;
+      color: white;
+    }
+    .feature-section {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 100px 0;
+    }
+    .footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 60px 0 30px;
+    }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="RDSLogo.png" alt="RDS Logo" class="img-fluid" style="max-height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#solutions">Solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-contact" href="tel:+443301332545">+44 330 133 2545</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="section-title">Market Leaders Since 2009</div>
+        <h1 class="display-4 fw-bold mb-4">Transform Your Business with Smart Data Capture Solutions</h1>
+        <p class="lead mb-5">Streamline operations, ensure compliance, and drive efficiency with our innovative mobile data capture solutions. Trusted by industry leaders for paperless excellence.</p>
+        <a href="#contact" class="btn btn-contact btn-lg me-3">Book a Demo</a>
+        <a href="#solutions" class="btn btn-outline-light btn-lg">Explore Solutions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solutions Section -->
+<section class="py-5" id="solutions">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-title">Our Solutions</div>
+      <h2 class="display-5 fw-bold">Tailored for Your Industry</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="product-card h-100">
+          <div class="card-body p-4">
+            <img src="CompliantLogo.png" class="img-fluid" alt="Ranger Data Systems Logo"
+                 style="filter: grayscale(100%) brightness(0%);">
+            <p class="text-muted">The effective paperless Food Safety Management Solution.</p>
+            <a href="http://thecompliantsystem.co.uk" class="btn btn-outline-success">Learn More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card h-100">
+          <div class="card-body p-4">
+            <img src="PlotASiteLogo.png" class="img-fluid" alt="Ranger Data Systems Logo"
+                 style="filter: grayscale(100%) brightness(0%);">
+            <p class="text-muted">The Complete Site Management solution.</p>
+            <a href="http://plotasite.com" class="btn btn-outline-success">Learn More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card h-100">
+          <div class="card-body p-4">
+            <img src="TMLogo.png" class="img-fluid" alt="Ranger Data Systems Logo"
+                 style="filter: grayscale(100%) brightness(0%);">
+            <br>
+            <p class="text-muted">Job Management for Drainage Solution Providers.</p>
+            <a href="http://thedrainsystem.co.uk" class="btn btn-outline-success">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Section -->
+<section class="feature-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="section-title">Why Choose Us</div>
+        <h2 class="display-5 fw-bold mb-4">Simple. Effective. Affordable.</h2>
+        <p>Our off-the-shelf applications deliver a rich variety of solutions and can be found in multiple industry sectors covering compliance, site management, stock control, quality assurance, job management, production, auditing and asset inventory control. We believe any solution should adapt to your company and not the other way round. Our configurable solutions help safeguard our client’s performance and reputation. </p>
+        <br>
+        <div class="mb-4">
+          <h4><i class="fas fa-check-circle text-success me-2"></i> Benefit Here</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="mb-4">
+          <h4><i class="fas fa-check-circle text-success me-2"></i> Another Benefit Here</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="mb-4">
+          <h4><i class="fas fa-check-circle text-success me-2"></i> Finally, Another Benefit Here</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-title">Contact Us</div>
+        <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Operations?</h2>
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select form-select-lg">
+              <option selected>Select Solution</option>
+              <option>Food Safety Management</option>
+              <option>Site Management</option>
+              <option>Task Management</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-contact btn-lg">Request Demo</button>
+        </form>
+      </div>
+      <div class="col-lg-5 offset-lg-1">
+        <div class="card border-0 bg-light p-4 h-100">
+          <div class="card-body">
+            <h3 class="mb-4">Get in Touch</h3>
+            <div class="mb-4">
+              <h5><i class="fas fa-phone text-success me-2"></i> Call Us</h5>
+              <p class="mb-0">+44 330 133 2545</p>
+            </div>
+            <div class="mb-4">
+              <h5><i class="fas fa-envelope text-success me-2"></i> Email Us</h5>
+              <p class="mb-0">info@rangerdatasystem.co.uk</p>
+            </div>
+            <div class="mb-4">
+              <h5><i class="fas fa-globe text-success me-2"></i> Connect</h5>
+              <a href="https://www.linkedin.com/company/1565619/admin/inbox/" class="text-success me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="RDSLogo.png" alt="RDS Logo" class="img-fluid" style="max-height: 50px;">
+        <br>
+        <p class="mb-4">Market leaders in mobile data capture solutions since 2009.</p>
+      </div>
+      <div class="col-md-6 text-end">
+        <a href="#" class="text-white me-3">Privacy Policy</a>
+        <a href="#" class="text-white">Terms of Service</a>
+      </div>
+    </div>
+    <hr class="my-4 border-secondary">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="mb-0">&copy; 2024 Ranger Data Systems Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      document.querySelector('.navbar').classList.add('scrolled');
+      document.querySelectorAll('.nav-link').forEach(link => link.style.color = '#333 !important');
+    } else {
+      document.querySelector('.navbar').classList.remove('scrolled');
+      document.querySelectorAll('.nav-link').forEach(link => link.style.color = 'white !important');
+    }
+  });
+</script>
+</body>
+</html>
