@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranger Data Systems - Mobile Data Capture Solutions</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="home-page">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="RDSLogo.png" alt="RDS Logo" class="img-fluid" style="max-height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#solutions">
+            Solutions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="http://thecompliantsystem.co.uk">Compliant</a></li>
+            <li><a class="dropdown-item" href="http://plotasite.com">PlotASite</a></li>
+            <li><a class="dropdown-item" href="http://thedrainsystem.co.uk">TaskMaster</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-contact" href="tel:+443301332545">+44 330 133 2545</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="section-title">Transforming businesses through Mobile Data Capture Solutions</div>
+        <h1 class="display-5 fw-bold mb-4">Ranger Data Systems Limited are market leaders in mobile data capture solutions.</h1>
+        <p class="lead mb-5">Formed in 2009, our passion is to provide affordable and effective solutions that help our clients improve their business processes and provide rapid return on investment.</p>
+        <a href="#contact" class="btn btn-contact btn-lg me-3">Book a Demo</a>
+        <a href="#solutions" class="btn btn-outline-light btn-lg">Explore Solutions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solutions Section -->
+<section class="py-5" id="solutions">
+  <div class="container-fluid px-5">
+    <div class="text-center mb-5">
+      <div class="section-title">Our Solutions</div>
+      <h2 class="display-5 fw-bold">Tailored for Your Industry</h2>
+    </div>
+
+    <div id="solutionsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+          <!-- Card 1 -->
+          <div class="product-card" data-position="left">
+            <div class="header-image-container">
+              <img src="compliant.jpeg" alt="Food Safety Management" class="header-image">
+              <div class="gradient-fade"></div>
+            </div>
+            <div class="card-body p-4">
+              <img src="CompliantColLogo.png" class="img-fluid" alt="Ranger Data Systems Logo">
+              <p class="text-muted">The effective paperless Food Safety Management Solution.</p>
+              <a href="http://thecompliantsystem.co.uk" class="btn btn-outline-success">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="product-card" data-position="center">
+            <div class="header-image-container">
+              <img src="PlotASite.png" alt="Site Management" class="header-image">
+              <div class="gradient-fade"></div>
+            </div>
+            <div class="card-body p-4">
+              <img src="PlotASiteLogoCol.png" class="img-fluid" alt="Ranger Data Systems Logo">
+              <p class="text-muted">The Complete Site Management solution.</p>
+              <a href="http://plotasite.com" class="btn btn-outline-success">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="product-card" data-position="right">
+            <div class="header-image-container">
+              <img src="TaskMaster.jpeg" alt="Drainage Solutions" class="header-image">
+              <div class="gradient-fade"></div>
+            </div>
+            <div class="card-body p-4">
+              <img src="TaskMasterColLogo.png" class="img-fluid" alt="Ranger Data Systems Logo">
+              <p class="text-muted">Job Management for Drainage Solution Providers.</p>
+              <a href="http://thedrainsystem.co.uk" class="btn btn-outline-success">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" onclick="moveCards('prev')">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" onclick="moveCards('next')">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button type="button" class="active" onclick="moveToCard(0)"></button>
+        <button type="button" onclick="moveToCard(1)"></button>
+        <button type="button" onclick="moveToCard(2)"></button>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+<style>
+  .carousel {
+    position: relative;
+    padding: 0 60px;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  .carousel-track-wrapper {
+    overflow: hidden;
+    padding: 20px 0;
+  }
+
+  .carousel-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    height: 400px;
+  }
+
+  .product-card {
+    flex: 0 0 350px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .header-image-container {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gradient-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, #f8f9fa);
+  }
+
+  .product-card[data-position="left"] {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.3;
+    filter: grayscale(70%);
+  }
+
+  .product-card[data-position="center"] {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .product-card[data-position="right"] {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.3;
+    filter: grayscale(70%);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: #4CAF50;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 3;
+    cursor: pointer;
+    border: none;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    opacity: 0.5;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .carousel-indicators button.active {
+    opacity: 1;
+  }
+
+  @media (max-width: 992px) {
+    .product-card[data-position="left"],
+    .product-card[data-position="right"] {
+      display: none;
+    }
+
+    .carousel-track {
+      gap: 0;
+    }
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const totalCards = 3;
+  let autoplayInterval;
+
+  function moveCards(direction) {
+    clearInterval(autoplayInterval);
+
+    if (direction === 'next') {
+      currentIndex = (currentIndex + 1) % totalCards;
+    } else {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    }
+
+    updateCardPositions();
+    updateIndicators();
+    startAutoplay();
+  }
+
+  function moveToCard(index) {
+    clearInterval(autoplayInterval);
+    currentIndex = index;
+    updateCardPositions();
+    updateIndicators();
+    startAutoplay();
+  }
+
+  function updateCardPositions() {
+    const cards = document.querySelectorAll('.product-card');
+
+    cards.forEach((card, index) => {
+      const position = (index - currentIndex + totalCards) % totalCards;
+      if (position === 0) {
+        card.dataset.position = 'center';
+      } else if (position === 1) {
+        card.dataset.position = 'right';
+      } else {
+        card.dataset.position = 'left';
+      }
+    });
+  }
+
+  function updateIndicators() {
+    const indicators = document.querySelectorAll('.carousel-indicators button');
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(() => {
+      moveCards('next');
+    }, 5000);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    updateCardPositions();
+    startAutoplay();
+  });
+</script>
+
+<!-- Feature Section -->
+<section class="feature-section" id="about">
+  <div class="container">
+    <!-- Off-the-shelf Solutions -->
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="section-title">Why Choose Us</div>
+        <h2 class="display-5 fw-bold mb-4">Simple. Effective. Affordable.</h2>
+        <p>Our off-the-shelf applications deliver a rich variety of solutions and can be found in multiple industry sectors covering compliance, site management, stock control, quality assurance, job management, production, auditing and asset inventory control.</p>
+        <br>
+        <div class="mb-4">
+          <h4><i class="fas fa-check-circle text-success me-2"></i> Tail Shouldn’t Wag the Dog</h4>
+          <p>We believe every good solution should adapt to our client’s requirements, not the other way round. Our solutions help safeguard our client’s businesses and reputation.</p>
+        </div>
+        <div class="mb-4">
+          <h4><i class="fas fa-check-circle text-success me-2"></i> What Makes us Tick</h4>
+          <p>Our Team share a passion for providing solutions that save time, money and improve operations. We take pride in supporting our clients every step of the way.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+      </div>
+    </div>
+
+    <!-- Bespoke Solutions -->
+    <div class="row align-items-center mt-5 pt-5 border-top">
+      <div class="col-lg-6">
+      </div>
+      <div class="col-lg-6">
+        <div class="section-title">Bespoke Solutions</div>
+        <h2 class="display-5 fw-bold mb-4">Built Around Your Business</h2>
+        <p>We develop bespoke solutions to client specifications. Over the years, we have developed a diverse range of applications including piece recording, asset management, production line control, risk assessment, crop management, packhouse solutions and more.</p>
+        <br>
+        <p>Our solutions can be linked into your existing computer systems to achieve maximum benefits.</p>
+        <br>
+        <p>Feel free to contact us if you have a specific requirement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Header -->
+      <div class="col-12 text-center mb-5">
+        <div class="section-title">Contact Us</div>
+        <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Operations?</h2>
+      </div>
+
+      <!-- Two Column Layout -->
+      <div class="row">
+        <!-- Google Form Column -->
+        <div class="col-lg-7">
+          <div class="google-form-container">
+            <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeWKs-Y9z--rtj6Yi1PixbpA3g5YdswTPUbQtliIq2P04aEpg/viewform?embedded=true"
+                    style="width: 100%; height: 1100px;"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Info Column -->
+        <div class="col-lg-4 offset-lg-1">
+          <div class="card border-0 bg-light p-4 sticky-top" style="top: 100px;">
+            <div class="card-body">
+              <h3 class="mb-4">Get in Touch</h3>
+              <div class="mb-4">
+                <h5><i class="fas fa-phone text-success me-2"></i> Call Us</h5>
+                <p class="mb-0">+44 330 133 2545</p>
+              </div>
+              <div class="mb-4">
+                <h5><i class="fas fa-envelope text-success me-2"></i> Email Us</h5>
+                <p class="mb-0">info@rangerdatasystems.co.uk</p>
+              </div>
+              <div class="mb-4">
+                <h5><i class="fas fa-globe text-success me-2"></i> Connect</h5>
+                <a href="https://www.linkedin.com/company/1565619/admin/inbox/" class="text-success me-3">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <!-- Green YouTube Icon -->
+                <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" class="text-success">
+                  <i class="fab fa-youtube fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .google-form-container {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  @media (max-width: 991px) {
+    .sticky-top {
+      position: relative !important;
+      top: 0 !important;
+      margin-top: 2rem;
+    }
+
+    .google-form-container iframe {
+      height: 1000px;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="RDSLogo.png" alt="RDS Logo" class="img-fluid" style="max-height: 50px;">
+        <br>
+        <p class="mb-4">Transforming businesses through Mobile Data Capture Solutions</p>
+      </div>
+      <div class="col-md-6 text-end">
+        <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
+      </div>
+    </div>
+    <hr class="my-4 border-secondary">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="mb-0">&copy; 2025 Ranger Data Systems Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      document.querySelector('.navbar').classList.add('scrolled');
+      document.querySelectorAll('.nav-link').forEach(link => link.style.color = '#333 !important');
+    } else {
+      document.querySelector('.navbar').classList.remove('scrolled');
+      document.querySelectorAll('.nav-link').forEach(link => link.style.color = 'white !important');
+    }
+  });
+</script>
+</body>
+</html>

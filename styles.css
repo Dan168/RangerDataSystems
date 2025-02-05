@@ -1,0 +1,341 @@
+/* Global styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/api/placeholder/1920/1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation - Updated */
+.navbar {
+    transition: 0.3s;
+    padding: 1rem 0;
+}
+
+/* Home page specific navbar styles */
+.home-page .navbar {
+    background-color: transparent;
+}
+
+.home-page .navbar.scrolled {
+    background-color: #fff;
+}
+
+.home-page .navbar .nav-link {
+    color: white !important;
+}
+
+.home-page .navbar.scrolled .nav-link {
+    color: #333 !important;
+}
+
+/* Privacy page specific navbar styles */
+.privacy-page .navbar {
+    background-color: #fff;
+}
+
+.privacy-page .navbar .nav-link {
+    color: #333 !important;
+}
+
+/* Product cards */
+.product-card {
+    background: #f8f9fa;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    width: 100%; /* Default for mobile */
+}
+
+/* Apply 30% width only on desktop (screens wider than 768px) */
+@media screen and (min-width: 769px) {
+    .product-card {
+        width: 30%;
+    }
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-card .icon {
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Section styling */
+.section-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-contact {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Feature section */
+.feature-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    padding: 0 60px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.carousel-track-wrapper {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    height: 400px;
+}
+
+.carousel .product-card {
+    flex: 0 0 350px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header-image-container {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, #f8f9fa);
+}
+
+.product-card[data-position="left"] {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.3;
+    filter: grayscale(70%);
+}
+
+.product-card[data-position="center"] {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.product-card[data-position="right"] {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.3;
+    filter: grayscale(70%);
+}
+
+/* Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: #4CAF50;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 3;
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    opacity: 0.5;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* Privacy page styles */
+.privacy-content {
+    padding: 120px 0 60px;
+}
+
+.privacy-content h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.privacy-content h2 {
+    color: #4CAF50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.privacy-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.privacy-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Special styles for privacy page navbar */
+.privacy-page .navbar {
+    background-color: #fff;
+}
+
+.privacy-page .nav-link {
+    color: #333 !important;
+}
+
+/* Contact form styles (from privacy page) */
+.form-control-lg {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.form-select-lg {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* Card styles (from privacy page) */
+.card.bg-light {
+    border-radius: 10px;
+}
+
+.card-body h5 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .product-card[data-position="left"],
+    .product-card[data-position="right"] {
+        display: none;
+    }
+
+    .carousel-track {
+        gap: 0;
+    }
+
+    .privacy-content {
+        padding: 100px 20px 40px;
+    }
+
+    .privacy-content h1 {
+        font-size: 2rem;
+    }
+
+    .privacy-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .privacy-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+    }
+
+    .btn-contact {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .privacy-content {
+        padding: 80px 15px 30px;
+    }
+}
